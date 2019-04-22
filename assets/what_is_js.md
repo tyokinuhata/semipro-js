@@ -1,0 +1,1 @@
+# JavaScriptとは何か
