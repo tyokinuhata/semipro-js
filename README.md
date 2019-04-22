@@ -1,2 +1,2 @@
 # Semipro JS
-中級者になるためのJavaScriptの本.
+中級者のためのJavaScriptの本.
