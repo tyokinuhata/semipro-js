@@ -48,8 +48,9 @@ JavaScript内部の細かい実行プロセスについては [第n章 JavaScrip
 動的型付けはスクリプト言語に多く, JavaScript・Ruby・Pythonなどが代表的である.
 
 ## その他の特徴
-ブラウザで動作するJavaScriptの他に, 主にサーバサイドで動作するNode.jsがある.
+JavaScriptはイベント(例: クリック, マウスオーバー)によってプログラムを実行させるのが得意であり, これによりWebブラウザと親和性が高くなっている.
 
-また, JavaScriptの弱点を改善したAltJS(TypeScript, CoffeeScript, Dartなど)と呼ばれるものがあり, 最終的にこれらの言語によって書かれたソースコードをJavaScriptに変換してブラウザ上などで動作させることができる.
+また, ブラウザで動作するJavaScriptの他に, 主にサーバサイドで動作するNode.jsがある.
 
-他にも, JavaScriptはイベント(例: クリック, マウスオーバー)によってプログラムを実行させるのが得意であり, これによりWebブラウザと親和性が高くなっている.
+他にも, JavaScriptの弱点を改善した言語として, TypeScriptやCoffeeScript, Dart, Elmなどの言語が生まれた.
+これらの言語はAltJSと呼ばれ, 最終的にこれらの言語によって書かれたソースコードをJavaScriptに変換してブラウザ上などで動作させることができる.
