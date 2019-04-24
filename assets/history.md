@@ -65,7 +65,9 @@ Ajaxは画面を遷移することなくデータをやり取りし, 描画す�
 ## ライブラリ
 これまでJavaScriptはフォームの内容を加工したり, アニメーションを付けたりするような小規模なものに使われていたが, Ajaxの普及により大規模なプロジェクトにも用いられるようになってきた為, JavaScriptにもライブラリが登場した.  
 2005年に**prototype.js**, 2010年に**jQuery**が登場し両者ともに人気を博した.  
-また, jQueryはセレクタによる要素の絞り込みができる機能を備えており, それが便利だということでJavaScriptにも `querySelector`, `querySelectorAll` として実装されるなど, JavaScript自体にも影響を与えている.
+prototype.jsは後にプロトタイプ汚染という問題を起こしてしまう.  
+この問題については, [第n章 プロトタイプ]() にて扱う.  
+jQueryはセレクタによる要素の絞り込みができる機能を備えており, それが便利だということでJavaScriptにも `querySelector`, `querySelectorAll` として実装されるなど, JavaScript自体にも影響を与えている.
 
 ## V8
 2008年に**V8**と呼ばれるJavaScriptエンジンをGoogleが公開され, Google ChromeやNode.jsに採用された.  
