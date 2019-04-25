@@ -10,5 +10,6 @@
 * [第７章 プロトタイプ]()
 * [第８章 関数型としてのJavaScript]()
 * [第９章 非同期通信]()
-* [第10章 JavaScriptの内部構造]()
-* [第11章 TypeScriptと型]()
+* [第10章 JavaScriptにおけるセキュリティ]()
+* [第11章 JavaScriptの内部構造]()
+* [第12章 TypeScriptと型]()

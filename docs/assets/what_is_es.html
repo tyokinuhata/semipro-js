@@ -222,7 +222,7 @@
                 <span>
             
                     
-                    第10章 JavaScriptの内部構造
+                    第10章 JavaScriptにおけるセキュリティ
             
                 </span>
             
@@ -235,7 +235,20 @@
                 <span>
             
                     
-                    第11章 TypeScriptと型
+                    第11章 JavaScriptの内部構造
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    第12章 TypeScriptと型
             
                 </span>
             
@@ -288,7 +301,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="ecmascript&#x3068;&#x306F;&#x4F55;&#x304B;">ECMAScript&#x3068;&#x306F;&#x4F55;&#x304B;</h1>
+<p>&#x73FE;&#x5728;, JavaScript&#x306E;&#x4ED5;&#x69D8;&#x306F;ECMAScript(ECMA-262)&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x3067;Ecma International&#x306B;&#x3088;&#x3063;&#x3066;&#x6A19;&#x6E96;&#x5316;&#x304C;&#x884C;&#x308F;&#x308C;&#x3066;&#x3044;&#x308B;.<br>&#x3053;&#x306E;&#x7AE0;&#x3067;&#x306F;, Ecma International&#x3068;&#x3044;&#x3046;&#x6A5F;&#x95A2;&#x306B;&#x3064;&#x3044;&#x3066;, &#x305D;&#x3057;&#x3066;ECMAScript&#x306E;&#x79FB;&#x308A;&#x5909;&#x308F;&#x308A;, ECMAScript&#x306E;&#x7B56;&#x5B9A;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3059;&#x308B;.</p>
+<h2 id="ecma-international">ECMA International</h2>
+<p><strong>ECMA International</strong>&#x306F;&#x60C5;&#x5831;&#x901A;&#x4FE1;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x5206;&#x91CE;&#x306B;&#x304A;&#x3051;&#x308B;&#x56FD;&#x969B;&#x7684;&#x306A;&#x6A19;&#x6E96;&#x5316;&#x56E3;&#x4F53;&#x3067;&#x3042;&#x308B;.<br>1961&#x5E74;&#x306B;&#x30E8;&#x30FC;&#x30ED;&#x30C3;&#x30D1;&#x306B;&#x304A;&#x3051;&#x308B;&#x8A08;&#x7B97;&#x6A5F;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x3092;&#x6A19;&#x6E96;&#x5316;&#x3092;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x8A2D;&#x7ACB;&#x3055;&#x308C;, &#x6B27;&#x5DDE;&#x96FB;&#x5B50;&#x8A08;&#x7B97;&#x6A5F;&#x5DE5;&#x696D;&#x4F1A;&#x3068;&#x3044;&#x3046;&#x540D;&#x79F0;&#x3067;&#x6D3B;&#x52D5;&#x3057;&#x3066;&#x3044;&#x305F;&#x304C;, &#x305D;&#x306E;&#x5F8C;1994&#x5E74;&#x306B;&#x56FD;&#x969B;&#x7684;&#x306A;&#x7ACB;&#x5834;&#x3092;&#x53CD;&#x6620;&#x3057;, ECMA International&#x306B;&#x6539;&#x79F0;&#x3055;&#x308C;&#x305F;.<br>&#x672C;&#x90E8;&#x306F;&#x30B9;&#x30A4;&#x30B9;&#x306E;&#x30B8;&#x30E5;&#x30CD;&#x30FC;&#x30F4;&#x306B;&#x3042;&#x308B;.</p>
+<p>Ecma International&#x304C;&#x6A19;&#x6E96;&#x5316;&#x3057;&#x3066;&#x3044;&#x308B;&#x3082;&#x306E;&#x306F;&#x591A;&#x5C90;&#x306B;&#x6E21;&#x308A;, &#x4EE3;&#x8868;&#x7684;&#x306A;&#x3082;&#x306E;&#x306B;&#x306F;,</p>
+<ul>
+<li>ECMA-262(ECMAScript)</li>
+<li>ECMA-334(C#)</li>
+<li>ECMA-335(&#x5171;&#x901A;&#x8A00;&#x8A9E;&#x57FA;&#x76E4;)</li>
+<li>ECMA-357(ECMAScript for XML)</li>
+<li>ECMA-402(&#x56FD;&#x969B;&#x5316;API)</li>
+<li>ECMA-404(JSON)</li>
+</ul>
+<p>&#x304C;&#x3042;&#x308B;.<br>&#x3053;&#x306E;&#x3046;&#x3061;, JavaScript&#x3068;&#x6DF1;&#x304F;&#x95A2;&#x308F;&#x308A;&#x306E;&#x3042;&#x308B;, <strong>ECMA-262</strong>(<strong>ECMAScript</strong>), <strong>ECMA-357</strong>(<strong>ECMAScript for XML</strong>), <strong>ECMA-402</strong>(<strong>&#x56FD;&#x969B;&#x5316;API</strong>), <strong>ECMA-404</strong>(<strong>JSON</strong>)&#x306B;&#x3064;&#x3044;&#x3066;&#x89E3;&#x8AAC;&#x3059;&#x308B;.</p>
+
                                 
                                 </section>
                             
@@ -327,7 +354,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第３章 ECMAScriptとは何か","level":"1.4","depth":1,"next":{"title":"第４章 Node.jsとは何か","level":"1.5","depth":1,"ref":"","articles":[]},"previous":{"title":"第２章 JavaScriptの歴史","level":"1.3","depth":1,"path":"assets/history.md","ref":"assets/history.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/what_is_es.md","mtime":"2019-04-22T14:41:53.169Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-24T09:42:06.443Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第３章 ECMAScriptとは何か","level":"1.4","depth":1,"next":{"title":"第４章 Node.jsとは何か","level":"1.5","depth":1,"ref":"","articles":[]},"previous":{"title":"第２章 JavaScriptの歴史","level":"1.3","depth":1,"path":"assets/history.md","ref":"assets/history.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/what_is_es.md","mtime":"2019-04-25T06:57:54.432Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-25T06:58:15.272Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
