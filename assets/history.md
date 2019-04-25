@@ -64,10 +64,11 @@ Ajaxは画面を遷移することなくデータをやり取りし, 描画す�
 
 ## ライブラリ
 これまでJavaScriptはフォームの内容を加工したり, アニメーションを付けたりするような小規模なものに使われていたが, Ajaxの普及により大規模なプロジェクトにも用いられるようになってきた為, JavaScriptにもライブラリが登場した.  
-2005年に**prototype.js**, 2010年に**jQuery**が登場し両者ともに人気を博した.  
+2005年に**prototype.js**, 2010年に**jQuery**が登場し, AjaxやDOM関連のユーティリティを提供する先駆けとなった.  
 prototype.jsは後にプロトタイプ汚染という問題を起こしてしまう.  
 この問題については, [第n章 プロトタイプ]() にて扱う.  
-jQueryはセレクタによる要素の絞り込みができる機能を備えており, それが便利だということでJavaScriptにも `querySelector`, `querySelectorAll` として実装されるなど, JavaScript自体にも影響を与えている.
+jQueryはセレクタによる要素の絞り込みができる機能を備えており, それが便利だということでJavaScriptにも `querySelector`, `querySelectorAll` として実装されるなど, JavaScript自体にも影響を与えている.  
+クロスブラウザの対応や, プラグインとしての拡張が容易であったことから非常に人気を博した.
 
 ## V8
 2008年に**V8**と呼ばれるJavaScriptエンジンをGoogleが公開され, Google ChromeやNode.jsに採用された.  
@@ -93,7 +94,13 @@ LiveWireという名前になった経緯としては, 当時マイクロソフ�
 
 ## フレームワーク
 JavaScriptが見直され, どんどん大規模化・複雑化していく中で, ライブラリだけでは対応しきれなくなっていた.  
-そういった流れから, プロジェクトの雛形自体を提供する, **Backbone.js**や**AngularJS**をはじめとするフレームワークが登場した.
+そういった流れから, プロジェクトの雛形自体を提供する, **Backbone.js**や**AngularJS**をはじめとするフレームワークが登場した.  
+
+Backbone.jsはシンプルなフレームワークで, ModelとViewといった基本的な機能と, Event・Collection・Routerといったそれを補助する機能で成り立っている.  
+Underscore.jsとjQueryに依存している点や, ViewとModelの連携を自分で書く必要があるため, 扱いが難しい.  
+Backbone.jsの機能を拡張したものに, Marionette.jsというものもある.
+
+// Angular, Vue ...
 
 ## AltJS
 他にも, JavaScriptの弱点を改善した言語として, **TypeScript**や**CoffeeScript**, **Dart**, **Elm**などの言語が生まれた.

@@ -141,14 +141,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="what_is_node.html">
             
-                <span>
+                <a href="what_is_node.html">
             
                     
                     第４章 Node.jsとは何か
             
-                </span>
+                </a>
             
 
             
@@ -167,14 +167,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="ieee754.md">
+        <li class="chapter " data-level="1.7" >
             
                 <span>
             
                     
-                    第６章 IEEE754
+                    第６章 プロトタイプ
             
-                </a>
+                </span>
             
 
             
@@ -185,7 +185,7 @@
                 <span>
             
                     
-                    第７章 プロトタイプ
+                    第７章 関数型としてのJavaScript
             
                 </span>
             
@@ -198,7 +198,7 @@
                 <span>
             
                     
-                    第８章 関数型としてのJavaScript
+                    第８章 非同期通信
             
                 </span>
             
@@ -206,14 +206,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" >
+        <li class="chapter " data-level="1.10" data-path="architecture.html">
             
-                <span>
+                <a href="architecture.html">
             
                     
-                    第９章 非同期通信
+                    第９章 アーキテクチャ
             
-                </span>
+                </a>
             
 
             
@@ -224,7 +224,7 @@
                 <span>
             
                     
-                    第10章 JavaScriptにおけるセキュリティ
+                    第10章 JavaScriptのその他新機能
             
                 </span>
             
@@ -237,7 +237,7 @@
                 <span>
             
                     
-                    第11章 JavaScriptの内部構造
+                    第11章 JavaScriptにおけるセキュリティ
             
                 </span>
             
@@ -250,7 +250,33 @@
                 <span>
             
                     
-                    第12章 TypeScriptと型
+                    第12章 IEEE754
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    第13章 JavaScriptの内部構造
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    第14章 TypeScriptと型
             
                 </span>
             
@@ -330,7 +356,7 @@
 <h2 id="ajax">Ajax</h2>
 <p>2000&#x5E74;&#x4EE3;&#x5F8C;&#x534A;, Google&#x304C;JavaScript&#x306E;<strong>Ajax</strong>&#x6280;&#x8853;&#x3092;&#x4F7F;&#x3063;&#x305F;Google Maps&#x3092;&#x767A;&#x8868;&#x3057;, &#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#x518D;&#x3073;JavaScript&#x304C;&#x898B;&#x76F4;&#x3055;&#x308C;&#x59CB;&#x3081;&#x308B;.<br>Ajax&#x306F;&#x753B;&#x9762;&#x3092;&#x9077;&#x79FB;&#x3059;&#x308B;&#x3053;&#x3068;&#x306A;&#x304F;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x3084;&#x308A;&#x53D6;&#x308A;&#x3057;, &#x63CF;&#x753B;&#x3059;&#x308B;&#x6280;&#x8853;&#x7FA4;&#x306E;&#x3053;&#x3068;&#x3092;&#x6307;&#x3057;, UI/UX&#x7684;&#x306B;&#x898B;&#x3066;&#x304B;&#x306A;&#x308A;&#x826F;&#x3044;&#x3082;&#x306E;&#x3068;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;.<br>&#x307E;&#x305F;, Ajax&#x306F; <code>XMLHttpRequest</code> &#x3092;&#x4E2D;&#x6838;&#x3068;&#x3057;&#x305F;&#x6280;&#x8853;&#x7FA4;&#x3067;, &#x3053;&#x308C;&#x306F;&#x30DE;&#x30A4;&#x30AF;&#x30ED;&#x30BD;&#x30D5;&#x30C8;&#x793E;&#x304C;ActiveX&#x3092;&#x5B9F;&#x88C5;&#x3057;&#x59CB;&#x3081;&#x305F;&#x306E;&#x304C;&#x306F;&#x3058;&#x307E;&#x308A;&#x3060;&#x3063;&#x305F;.<br>&#x5F53;&#x521D;&#x306F;, Ajax&#x3067;&#x3084;&#x308A;&#x3068;&#x308A;&#x3059;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x69CB;&#x9020;&#x306B;XML&#x304C;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x3053;&#x3068;&#x304C;&#x591A;&#x304B;&#x3063;&#x305F;&#x304C;, &#x73FE;&#x5728;&#x3067;&#x306F;JSON&#x3092;&#x4F7F;&#x3063;&#x3066;&#x3084;&#x308A;&#x53D6;&#x308A;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x304C;&#x591A;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;.<br>&#x3053;&#x308C;&#x3089;&#x306E;&#x6280;&#x8853;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;, <a href="">&#x7B2C;n&#x7AE0; &#x975E;&#x540C;&#x671F;&#x901A;&#x4FE1;</a> &#x306B;&#x3066;&#x8A73;&#x3057;&#x304F;&#x89E3;&#x8AAC;&#x3059;&#x308B;.</p>
 <h2 id="&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;">&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;</h2>
-<p>&#x3053;&#x308C;&#x307E;&#x3067;JavaScript&#x306F;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x305F;&#x308A;, &#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4ED8;&#x3051;&#x305F;&#x308A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x5C0F;&#x898F;&#x6A21;&#x306A;&#x3082;&#x306E;&#x306B;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x305F;&#x304C;, Ajax&#x306E;&#x666E;&#x53CA;&#x306B;&#x3088;&#x308A;&#x5927;&#x898F;&#x6A21;&#x306A;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x3082;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x304D;&#x305F;&#x70BA;, JavaScript&#x306B;&#x3082;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304C;&#x767B;&#x5834;&#x3057;&#x305F;.<br>2005&#x5E74;&#x306B;<strong>prototype.js</strong>, 2010&#x5E74;&#x306B;<strong>jQuery</strong>&#x304C;&#x767B;&#x5834;&#x3057;&#x4E21;&#x8005;&#x3068;&#x3082;&#x306B;&#x4EBA;&#x6C17;&#x3092;&#x535A;&#x3057;&#x305F;.<br>prototype.js&#x306F;&#x5F8C;&#x306B;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x6C5A;&#x67D3;&#x3068;&#x3044;&#x3046;&#x554F;&#x984C;&#x3092;&#x8D77;&#x3053;&#x3057;&#x3066;&#x3057;&#x307E;&#x3046;.<br>&#x3053;&#x306E;&#x554F;&#x984C;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;, <a href="">&#x7B2C;n&#x7AE0; &#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;</a> &#x306B;&#x3066;&#x6271;&#x3046;.<br>jQuery&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x3088;&#x308B;&#x8981;&#x7D20;&#x306E;&#x7D5E;&#x308A;&#x8FBC;&#x307F;&#x304C;&#x3067;&#x304D;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x5099;&#x3048;&#x3066;&#x304A;&#x308A;, &#x305D;&#x308C;&#x304C;&#x4FBF;&#x5229;&#x3060;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;JavaScript&#x306B;&#x3082; <code>querySelector</code>, <code>querySelectorAll</code> &#x3068;&#x3057;&#x3066;&#x5B9F;&#x88C5;&#x3055;&#x308C;&#x308B;&#x306A;&#x3069;, JavaScript&#x81EA;&#x4F53;&#x306B;&#x3082;&#x5F71;&#x97FF;&#x3092;&#x4E0E;&#x3048;&#x3066;&#x3044;&#x308B;.</p>
+<p>&#x3053;&#x308C;&#x307E;&#x3067;JavaScript&#x306F;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x52A0;&#x5DE5;&#x3057;&#x305F;&#x308A;, &#x30A2;&#x30CB;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4ED8;&#x3051;&#x305F;&#x308A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x5C0F;&#x898F;&#x6A21;&#x306A;&#x3082;&#x306E;&#x306B;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x305F;&#x304C;, Ajax&#x306E;&#x666E;&#x53CA;&#x306B;&#x3088;&#x308A;&#x5927;&#x898F;&#x6A21;&#x306A;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x3082;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x304D;&#x305F;&#x70BA;, JavaScript&#x306B;&#x3082;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304C;&#x767B;&#x5834;&#x3057;&#x305F;.<br>2005&#x5E74;&#x306B;<strong>prototype.js</strong>, 2010&#x5E74;&#x306B;<strong>jQuery</strong>&#x304C;&#x767B;&#x5834;&#x3057;, Ajax&#x3084;DOM&#x95A2;&#x9023;&#x306E;&#x30E6;&#x30FC;&#x30C6;&#x30A3;&#x30EA;&#x30C6;&#x30A3;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x5148;&#x99C6;&#x3051;&#x3068;&#x306A;&#x3063;&#x305F;.<br>prototype.js&#x306F;&#x5F8C;&#x306B;&#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;&#x6C5A;&#x67D3;&#x3068;&#x3044;&#x3046;&#x554F;&#x984C;&#x3092;&#x8D77;&#x3053;&#x3057;&#x3066;&#x3057;&#x307E;&#x3046;.<br>&#x3053;&#x306E;&#x554F;&#x984C;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;, <a href="">&#x7B2C;n&#x7AE0; &#x30D7;&#x30ED;&#x30C8;&#x30BF;&#x30A4;&#x30D7;</a> &#x306B;&#x3066;&#x6271;&#x3046;.<br>jQuery&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x3088;&#x308B;&#x8981;&#x7D20;&#x306E;&#x7D5E;&#x308A;&#x8FBC;&#x307F;&#x304C;&#x3067;&#x304D;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x5099;&#x3048;&#x3066;&#x304A;&#x308A;, &#x305D;&#x308C;&#x304C;&#x4FBF;&#x5229;&#x3060;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;JavaScript&#x306B;&#x3082; <code>querySelector</code>, <code>querySelectorAll</code> &#x3068;&#x3057;&#x3066;&#x5B9F;&#x88C5;&#x3055;&#x308C;&#x308B;&#x306A;&#x3069;, JavaScript&#x81EA;&#x4F53;&#x306B;&#x3082;&#x5F71;&#x97FF;&#x3092;&#x4E0E;&#x3048;&#x3066;&#x3044;&#x308B;.<br>&#x30AF;&#x30ED;&#x30B9;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x5BFE;&#x5FDC;&#x3084;, &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3068;&#x3057;&#x3066;&#x306E;&#x62E1;&#x5F35;&#x304C;&#x5BB9;&#x6613;&#x3067;&#x3042;&#x3063;&#x305F;&#x3053;&#x3068;&#x304B;&#x3089;&#x975E;&#x5E38;&#x306B;&#x4EBA;&#x6C17;&#x3092;&#x535A;&#x3057;&#x305F;.</p>
 <h2 id="v8">V8</h2>
 <p>2008&#x5E74;&#x306B;<strong>V8</strong>&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;JavaScript&#x30A8;&#x30F3;&#x30B8;&#x30F3;&#x3092;Google&#x304C;&#x516C;&#x958B;&#x3055;&#x308C;, Google Chrome&#x3084;Node.js&#x306B;&#x63A1;&#x7528;&#x3055;&#x308C;&#x305F;.<br>V8&#x306F;JIT&#x30B3;&#x30F3;&#x30D1;&#x30A4;&#x30E9;&#x3092;&#x5099;&#x3048;&#x3066;&#x304A;&#x308A;, &#x305D;&#x308C;&#x307E;&#x3067;&#x306E;&#x30A4;&#x30F3;&#x30BF;&#x30D7;&#x30EA;&#x30BF;&#x578B;&#x306E;JavaScript&#x30A8;&#x30F3;&#x30B8;&#x30F3;&#x3067;&#x306E;&#x5B9F;&#x884C;&#x901F;&#x5EA6;&#x304C;&#x9045;&#x3044;&#x3068;&#x3044;&#x3046;&#x554F;&#x984C;&#x3092;&#x6539;&#x5584;&#x3057;&#x305F;.</p>
 <h2 id="ecmascript-5">ECMAScript 5</h2>
@@ -346,7 +372,9 @@ Node.js&#x306B;&#x3064;&#x3044;&#x3066;&#x306F; <a href="">&#x7B2C;n&#x7AE0; Nod
 </ul>
 <p>&#x3061;&#x306A;&#x307F;&#x306B;&#x305D;&#x308C;&#x307E;&#x3067;&#x306B;&#x3082;&#x30B5;&#x30FC;&#x30D0;&#x30B5;&#x30A4;&#x30C9;&#x306E;JavaScript&#x306F;&#x5B58;&#x5728;&#x3057;&#x3066;&#x304A;&#x308A;, &#x305D;&#x306E;&#x6B74;&#x53F2;&#x306F;1995&#x5E74;&#x306B;&#x307E;&#x3067;&#x9061;&#x308B;.<br>&#x305D;&#x308C;&#x306F;<strong>LiveWire</strong>&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;, &#x30CD;&#x30C3;&#x30C8;&#x30B9;&#x30B1;&#x30FC;&#x30D7;&#x30FB;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30BA;&#x793E;&#x304C;&#x958B;&#x767A;&#x3057;&#x305F;Netscape Navigator&#x4E0A;&#x3067;&#x52D5;&#x4F5C;&#x3057;&#x3066;&#x3044;&#x305F;JavaScript&#x30A8;&#x30F3;&#x30B8;&#x30F3;&#x3092;Web&#x30B5;&#x30FC;&#x30D0;&#x306B;&#x79FB;&#x690D;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;.<br>LiveWire&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306B;&#x306A;&#x3063;&#x305F;&#x7D4C;&#x7DEF;&#x3068;&#x3057;&#x3066;&#x306F;, &#x5F53;&#x6642;&#x30DE;&#x30A4;&#x30AF;&#x30ED;&#x30BD;&#x30D5;&#x30C8;&#x793E;&#x3068;&#x30B5;&#x30F3;&#x30FB;&#x30DE;&#x30A4;&#x30AF;&#x30ED;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x30BA;&#x793E;&#x304C;&#x300C;Java&#x300D;&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x306E;&#x4F7F;&#x7528;&#x306B;&#x3064;&#x3044;&#x3066;&#x63C9;&#x3081;&#x3066;&#x304A;&#x308A;, ServerSide JavaScript&#x3068;&#x3044;&#x3046;&#x540D;&#x79F0;&#x304C;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x305F;&#x3081;&#x3067;&#x3042;&#x308B;.<br>&#x307E;&#x305F;, &#x305D;&#x306E;&#x5F53;&#x6642;&#x306B;glue&#x8A00;&#x8A9E;&#x3068;&#x3044;&#x3046;&#x8003;&#x3048;&#x65B9;&#x304C;&#x6D41;&#x884C;&#x3057;&#x3066;&#x304A;&#x308A;, LiveWire&#x3092;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x540C;&#x58EB;&#x3092;&#x7D50;&#x3073;&#x3064;&#x3051;&#x308B;, &#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x9593;&#x306E;&#x30EF;&#x30A4;&#x30E4;&#x30FC;&#x3068;&#x3057;&#x3066;&#x6A5F;&#x80FD;&#x3055;&#x305B;&#x305F;&#x304B;&#x3063;&#x305F;&#x3068;&#x3044;&#x3046;&#x601D;&#x60F3;&#x304C;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x308B;.</p>
 <h2 id="&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;">&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;</h2>
-<p>JavaScript&#x304C;&#x898B;&#x76F4;&#x3055;&#x308C;, &#x3069;&#x3093;&#x3069;&#x3093;&#x5927;&#x898F;&#x6A21;&#x5316;&#x30FB;&#x8907;&#x96D1;&#x5316;&#x3057;&#x3066;&#x3044;&#x304F;&#x4E2D;&#x3067;, &#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3060;&#x3051;&#x3067;&#x306F;&#x5BFE;&#x5FDC;&#x3057;&#x304D;&#x308C;&#x306A;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x305F;.<br>&#x305D;&#x3046;&#x3044;&#x3063;&#x305F;&#x6D41;&#x308C;&#x304B;&#x3089;, &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x96DB;&#x5F62;&#x81EA;&#x4F53;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;, <strong>Backbone.js</strong>&#x3084;<strong>AngularJS</strong>&#x3092;&#x306F;&#x3058;&#x3081;&#x3068;&#x3059;&#x308B;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x304C;&#x767B;&#x5834;&#x3057;&#x305F;.</p>
+<p>JavaScript&#x304C;&#x898B;&#x76F4;&#x3055;&#x308C;, &#x3069;&#x3093;&#x3069;&#x3093;&#x5927;&#x898F;&#x6A21;&#x5316;&#x30FB;&#x8907;&#x96D1;&#x5316;&#x3057;&#x3066;&#x3044;&#x304F;&#x4E2D;&#x3067;, &#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3060;&#x3051;&#x3067;&#x306F;&#x5BFE;&#x5FDC;&#x3057;&#x304D;&#x308C;&#x306A;&#x304F;&#x306A;&#x3063;&#x3066;&#x3044;&#x305F;.<br>&#x305D;&#x3046;&#x3044;&#x3063;&#x305F;&#x6D41;&#x308C;&#x304B;&#x3089;, &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x96DB;&#x5F62;&#x81EA;&#x4F53;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;, <strong>Backbone.js</strong>&#x3084;<strong>AngularJS</strong>&#x3092;&#x306F;&#x3058;&#x3081;&#x3068;&#x3059;&#x308B;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x304C;&#x767B;&#x5834;&#x3057;&#x305F;.  </p>
+<p>Backbone.js&#x306F;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x30D5;&#x30EC;&#x30FC;&#x30E0;&#x30EF;&#x30FC;&#x30AF;&#x3067;, Model&#x3068;View&#x3068;&#x3044;&#x3063;&#x305F;&#x57FA;&#x672C;&#x7684;&#x306A;&#x6A5F;&#x80FD;&#x3068;, Event&#x30FB;Collection&#x30FB;Router&#x3068;&#x3044;&#x3063;&#x305F;&#x305D;&#x308C;&#x3092;&#x88DC;&#x52A9;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3067;&#x6210;&#x308A;&#x7ACB;&#x3063;&#x3066;&#x3044;&#x308B;.<br>Underscore.js&#x3068;jQuery&#x306B;&#x4F9D;&#x5B58;&#x3057;&#x3066;&#x3044;&#x308B;&#x70B9;&#x3084;, View&#x3068;Model&#x306E;&#x9023;&#x643A;&#x3092;&#x81EA;&#x5206;&#x3067;&#x66F8;&#x304F;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x305F;&#x3081;, &#x6271;&#x3044;&#x304C;&#x96E3;&#x3057;&#x3044;.<br>Backbone.js&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x62E1;&#x5F35;&#x3057;&#x305F;&#x3082;&#x306E;&#x306B;, Marionette.js&#x3068;&#x3044;&#x3046;&#x3082;&#x306E;&#x3082;&#x3042;&#x308B;.</p>
+<p>// Angular, Vue ...</p>
 <h2 id="altjs">AltJS</h2>
 <p>&#x4ED6;&#x306B;&#x3082;, JavaScript&#x306E;&#x5F31;&#x70B9;&#x3092;&#x6539;&#x5584;&#x3057;&#x305F;&#x8A00;&#x8A9E;&#x3068;&#x3057;&#x3066;, <strong>TypeScript</strong>&#x3084;<strong>CoffeeScript</strong>, <strong>Dart</strong>, <strong>Elm</strong>&#x306A;&#x3069;&#x306E;&#x8A00;&#x8A9E;&#x304C;&#x751F;&#x307E;&#x308C;&#x305F;.
 &#x3053;&#x308C;&#x3089;&#x306E;&#x8A00;&#x8A9E;&#x306F;AltJS&#x3068;&#x547C;&#x3070;&#x308C;, &#x6700;&#x7D42;&#x7684;&#x306B;&#x3053;&#x308C;&#x3089;&#x306E;&#x8A00;&#x8A9E;&#x306B;&#x3088;&#x3063;&#x3066;&#x66F8;&#x304B;&#x308C;&#x305F;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x3092;JavaScript&#x306B;&#x5909;&#x63DB;&#x3057;&#x3066;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x4E0A;&#x306A;&#x3069;&#x3067;&#x52D5;&#x4F5C;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;.<br>&#x3053;&#x306E;&#x3046;&#x3061;, TypeScript&#x306F;&#x3053;&#x306E;&#x4E2D;&#x3067;&#x6700;&#x3082;&#x30DB;&#x30C3;&#x30C8;&#x3067;&#x3042;&#x308B;&#x305F;&#x3081;, <a href="">&#x7B2C;n&#x7AE0; TypeScript&#x3068;&#x578B;</a> &#x306B;&#x3066;&#x89E3;&#x8AAC;&#x3059;&#x308B;.</p>
@@ -396,7 +424,7 @@ Node.js&#x306B;&#x3064;&#x3044;&#x3066;&#x306F; <a href="">&#x7B2C;n&#x7AE0; Nod
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第２章 JavaScriptの歴史","level":"1.3","depth":1,"next":{"title":"第３章 ECMAScriptとは何か","level":"1.4","depth":1,"path":"assets/what_is_es.md","ref":"assets/what_is_es.md","articles":[]},"previous":{"title":"第１章 JavaScriptとは何か","level":"1.2","depth":1,"path":"assets/what_is_js.md","ref":"assets/what_is_js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/history.md","mtime":"2019-04-24T09:41:45.796Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-25T08:21:53.084Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第２章 JavaScriptの歴史","level":"1.3","depth":1,"next":{"title":"第３章 ECMAScriptとは何か","level":"1.4","depth":1,"path":"assets/what_is_es.md","ref":"assets/what_is_es.md","articles":[]},"previous":{"title":"第１章 JavaScriptとは何か","level":"1.2","depth":1,"path":"assets/what_is_js.md","ref":"assets/what_is_js.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/history.md","mtime":"2019-04-25T12:45:02.334Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-25T12:45:11.635Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
