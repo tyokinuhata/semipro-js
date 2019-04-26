@@ -18,7 +18,7 @@ Ecma Internationalが標準化しているものは多岐に渡り, 代表的な
 - ECMA-408(Dart)
 
 などがある.  
-このうち, JavaScriptと深く関わりのある, ECMA-262(ECMAScript), ECMA-327(ECMAScript Compact Profile), ECMA-357(ECMAScript for XML), ECMA-402(国際化API), ECMA-404(JSON)について解説する.
+このうち, JavaScriptと関わりの深い, ECMA-262(ECMAScript), ECMA-327(ECMAScript Compact Profile), ECMA-357(ECMAScript for XML), ECMA-402(国際化API), ECMA-404(JSON)について解説する.
 
 ## ECMAScript
 [第２章 JavaScriptの歴史](history.md) で触れたように, ネットスケープ・コミュニケーションズ社のJavaScriptとマイクロソフト社のJScriptの非互換が問題になり, ネットスケープ・コミュニケーションズ社がJavaScriptの標準化をEcma Internationalに依頼した.  
@@ -65,3 +65,46 @@ ECMAScript 2015のリリースには実に４年もの歳月がかかってお�
 それぞれのプロポーザルを今後どのように進めていくかは, ２ヶ月に１度行われるTC39のミーティングにて決定される.  
 このミーティングで何を話すかは事前に決められており, GitHub上の [tc39/agendas](https://github.com/tc39/agendas) リポジトリにて公開されている.  
 また, ミーティングの議事録もGitHub上の [tc39/tc39-notes](https://github.com/tc39/tc39-notes) リポジトリにて公開されている.
+
+## ECMAScript Compact Profile
+**ECMAScript Compact Profile**(規格番号は**ECMA-327**)はリソースの厳しいデバイス用にデザインされたECMAScriptの仕様である.  
+いくつかの機能( `eval` など)がオプションとなっている.
+
+## ECMAScript for XML
+**ECMAScript for XML**(規格番号は**ECMA-357**)は**E4X**とも呼ばれ, XMLのネイティブサポートをJavaScriptに追加する拡張仕様である.  
+過去にはいくつかのブラウザでサポートされていたが, [MDN](https://developer.mozilla.org/ja/docs/E4X) でも説明されている通り, 現在この機能は廃止されている.
+
+## 国際化API
+**国際化API**(規格番号は**ECMA-402**)は**i18n API**とも呼ばれ, ロケールに合わせたメソッドを提供するための仕様.  
+「ロケールに合った」というのは, 例えば年月日を英語圏で表現するときは `04/26/2019` とするのが一般的だが, 日本語圏では `2019/04/26` とするのが一般的である.  
+このように言語に合った出力を提供するための仕様が国際化APIである.
+
+// コードを交えながらもう少し詳しく説明
+
+## JSON
+**JSON**は**JavaScript Object Notation**の略称で, データ記述言語の一種である.  
+構文はJavaScriptにおけるオブジェクトの記法をベースにしており, システム間でのデータの受け渡しにしばしば使用される.
+Web開発においては, Web APIにおいてXMLに代わって使用されることが多くなっている.
+
+JSONの仕様はいくつかの標準化団体によって数種類策定されている.
+
+|策定日|仕様名|
+|:--|:--|
+|2006年７月|RFC 4627|
+|2013年３月|RFC 7158|
+|2013年10月|ECMA-404 1st edition|
+|2014年３月|RFC 7159|
+|2017年12月14日|RFC 8259, IETF STD 90, ECMA-404 2nd edition|
+
+JSONは2001年にダグラス・クロックフォード氏によって発見され, 2002年に [json.org](http://json.org/) にてその仕様と記法が紹介された.  
+「発見」と書いたのには理由があり, ダグラス・クロックフォード氏が「The JSON Saga」というプレゼンの中で「自分はJSONを名付けたが考案者ではなく, それ自体は自然に存在していたもので, 早い例としては1996年にはNetScape Navigatorでデータ交換用に使われていた. だから発見したということになるのだが, 発見したのも自分が最初ではない」と述べているためである.
+
+それから時は経過し, 2006年に最初の標準仕様としてIETFから**RFC 4627**が策定される.  
+この策定では発見者であるダグラス・クロックフォード氏がオーサーとなった.
+
+そして2011年６月, ECMAScript 5.1の仕様書にJSONの文法が手短に紹介され, ２年後の2013年10月にECMA-404が策定される.
+
+RFC 7158にいくつか改善点があったことと, ECMA-404との間に不整合があったことから, IETFにてJSON Working Groupを発足し, 2014年３月にRFC 7159を策定した.  
+この策定にはダグラス・クロックフォード氏も参加していたが策定作業が難航したため, JSONの仕様策定のメーリングリストで提言を行っており, XMLの仕様策定の経験もあるティム・ブレイ氏をオーサーとして迎え入れた.
+
+MIMEタイプは `application/json` である.
