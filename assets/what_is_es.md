@@ -15,16 +15,26 @@ Ecma Internationalが標準化しているものは多岐に渡り, 代表的な
 - ECMA-357(ECMAScript for XML)
 - ECMA-402(国際化API)
 - ECMA-404(JSON)
+- ECMA-408(Dart)
 
-がある.  
-このうち, JavaScriptと深く関わりのある, **ECMA-262**(**ECMAScript**), **ECMA-327**(**ECMAScript Compact Profile**), **ECMA-357**(**ECMAScript for XML**), **ECMA-402**(**国際化API**), **ECMA-404**(**JSON**)について解説する.
+などがある.  
+このうち, JavaScriptと深く関わりのある, ECMA-262(ECMAScript), ECMA-327(ECMAScript Compact Profile), ECMA-357(ECMAScript for XML), ECMA-402(国際化API), ECMA-404(JSON)について解説する.
 
 ## ECMAScript
-[第２章 JavaScriptの歴史](history.md) で触れたように, ネットスケープ・コミュニケーションズ社のJavaScriptとマイクロソフト社のJScriptの非互換が問題になり, ネットスケープ・コミュニケーションズ社がJavaScriptの標準化をEcma Internalに依頼した.  
-こうして生まれたのがECMAScript(規格番号はECMA-262)である.  
+[第２章 JavaScriptの歴史](history.md) で触れたように, ネットスケープ・コミュニケーションズ社のJavaScriptとマイクロソフト社のJScriptの非互換が問題になり, ネットスケープ・コミュニケーションズ社がJavaScriptの標準化をEcma Internationalに依頼した.  
+こうした経緯で生まれたのが**ECMAScript**(規格番号は**ECMA-262**)である.  
 また, Ecma Internationalの他にも, ISO/IEC JTC 1からISO/IEC 16262, JISからJIS X 3060として標準化されている.
 
-ECMAScriptにはいくつかのエディションがあり, バージョンごとに新機能の追加が行われている.
+仕様の策定は, 実際にはEcma Internationalの中の**Technical Committee39**(**TC39**)という委員会によって議論されており, TC39はマイクロソフト社, Mozilla, Google, AppleといったブラウザベンダやECMAScriptに関心のある企業によって構成されている.
+
+現在, ECMAScriptの仕様書のドラフトはGitHub上の [tc39/ecma262](https://github.com/tc39/ecma262) リポジトリにて管理されており, 日々仕様が更新されている.  
+このようにバージョン番号を付けずに常に最新仕様を公開する形式のことを**Living Standard**と呼ぶ.  
+ECMAScriptでは, このLiving Standardの仕様とは別に, １年に１回, 決まった時期にバージョン番号を持った仕様も公開している.  
+ブラウザに実際に実装する際には, Living Standardの仕様が参照されることが多い.  
+これは, ブラウザ自体も日々更新されるものであり, Living Standardとの相性が良いためである.
+
+ECMAScript 2015のリリースには実に４年もの歳月がかかっており, それまで言語の進化が停滞していた.  
+そのため, ECMAScript 2015の策定後には, 仕様策定のための新しいプロセスが導入され, １年に１回, バージョン番号を持った仕様が策定されることとなった.
 
 |エディション|公開日|
 |:--|:--|
@@ -39,4 +49,19 @@ ECMAScriptにはいくつかのエディションがあり, バージョンご�
 |2017|2017年６月|
 |2018|2018年６月|
 
-ちなみに, ECMAScript 6(ECMAScript 2015)以降は１年に１回仕様が改定されることとなっている.
+仕様に追加される予定の新たな機能(API, 構文)の提案はそれぞれ個別のプロポーザル(提案書)として扱われる.  
+プロポーザルの一覧はGitHub上の [tc39/proposals](https://github.com/tc39/proposals) リポジトリにて公開されており, 個々のプロポーザルは tc39/proposal-XXXX (XXXXは機能名)というリポジトリで公開されている.  
+それぞれのプロポーザルには責任者(チャンピオン)とステージと呼ばれる概念が存在する.  
+ステージは０〜４までの５段階で, それぞれのステージは以下に示すような意味を持つ.
+
+|ステージ|説明|
+|:--|:--|
+|０|アイデアの段階|
+|１|機能提案の段階|
+|２|機能の仕様書ドラフトを作成した段階|
+|３|仕様としては完成しており, ブラウザの実装やフィードバックを求める段階|
+|４|仕様の策定が完了し, ２つ以上の実装が存在している段階. トランスパイラやPolyfill・ブラウザ(試験的なフラグ付きで実装されており, 有効化することで試すことができる)などで提供されていることが多い.|
+
+それぞれのプロポーザルを今後どのように進めていくかは, ２ヶ月に１度行われるTC39のミーティングにて決定される.  
+このミーティングで何を話すかは事前に決められており, GitHub上の [tc39/agendas](https://github.com/tc39/agendas) リポジトリにて公開されている.  
+また, ミーティングの議事録もGitHub上の [tc39/tc39-notes](https://github.com/tc39/tc39-notes) リポジトリにて公開されている.
